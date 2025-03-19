@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="cs.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="exercice.js"></script>
+</head>
+<body onload="charger()">
+    <h1>Images a Changer</h1>
+    <br>
+    <img src="" alt="" id="Im" width="160px" height="160px">
+    <br>
+    <h1>Nom et Prenom</h1>
+    <br>
+    <input type="text" id="NP" onblur="VerifierCacher()">
+    <br><br>
+    <table border="2px" id="tab">
+        <tr>
+            <td>Cocher le nombre de chiffres pour votre nombre </td>
+            <td><input type="radio" name="p" id="r5">5 chiffers <input type="radio" name="p" id="r6">6 chiffres </td>
+        </tr>
+        <tr>
+            <td>Ecrire un nombre </td>
+            <td><input type="number" id="nb"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><button type="submit" onclick="VerifierSuperPremier()">Verifier</button></td>
+        </tr>
+        <tr>
+            <td>Affichage du resultat </td>
+            <td id="res"></td>
+        </tr>
+
+    </table>
+
+</body>
+</html>
